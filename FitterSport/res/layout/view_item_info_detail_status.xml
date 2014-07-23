@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingBottom="20dip"
+    android:paddingTop="20dip" >
+
+    <FrameLayout
+        android:id="@+id/status_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ic_level_bg" >
+
+        <TextView
+            android:layout_gravity="center"
+            android:id="@+id/status_title"
+            style="@style/FTextView.BlackTtilePre"
+            android:text="fitter"
+            android:textSize="12sp" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/status_info"
+        style="@style/WhiteTextView"
+        android:layout_marginLeft="10dip"
+        android:gravity="center_vertical"
+        android:text="fitter" />
+
+</LinearLayout>

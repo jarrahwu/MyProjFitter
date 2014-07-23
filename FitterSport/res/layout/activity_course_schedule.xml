@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+  	style="@style/padding17"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/courseBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fa_01" />
+
+    <TextView
+        android:id="@+id/course_description"
+        style="@style/white_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:text="练习心肺功能, 冲击速度, 减脂效果明显, 时间短, 高质量, 全身性消耗." />
+
+    <com.chzh.fitter.view.BounceListView
+        android:scrollbars="@null"
+        android:layout_marginTop="10dip"
+        android:id="@+id/action_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+</LinearLayout>

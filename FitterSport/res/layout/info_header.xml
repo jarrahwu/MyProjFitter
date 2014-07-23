@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="10dip"
+    android:paddingBottom="10dip"
+    android:background="#20FFFFFF" >
+
+    <ImageView
+        android:id="@+id/info_portrait"
+        android:layout_width="75dip"
+        android:layout_height="75dip"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="30dip"
+        android:scaleType="fitXY"
+        android:padding="2dip"
+        android:background="@drawable/corner_white_portrit"
+        android:contentDescription="@string/description"
+        android:src="@drawable/h_2" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="20dip"
+        android:layout_marginLeft="25dip"
+        android:layout_marginTop="20dip"
+        android:layout_toRightOf="@+id/info_portrait"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/WhiteTextView"
+            android:layout_marginTop="7dip"
+            android:text="fitter" />
+
+        <!-- 状态查询 -->
+
+        <LinearLayout
+            android:id="@+id/status_parent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/me_uinfo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="状态:" />
+
+            <TextView
+                android:id="@+id/status"
+                style="@style/white_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dip"
+                android:text="活跃"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/level"
+            style="@style/me_uinfo_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableRight="@drawable/act_start"
+            android:text="等级:  " />
+
+        <ImageView
+            android:id="@+id/medal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:src="@drawable/medal" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:infotext="http://schemas.android.com/apk/res/com.chzh.fitter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 签到的顶部cover -->
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:scaleType="fitXY"
+        android:src="@drawable/sign_cover" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip" >
+
+        <!-- 已签到 -->
+        <com.chzh.fitter.view.InfoTextView
+            android:id="@+id/signed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            infotext:left_text="@string/signed"
+            infotext:left_text_size="6sp"
+            infotext:right_text="天"
+            infotext:right_text_size="6sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip"
+            android:layout_marginTop="15dip"
+            android:background="#20ffffff" />
+
+        <!-- 连续签到 -->
+
+        <com.chzh.fitter.view.InfoTextView
+            android:id="@+id/continuous_signed"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            infotext:left_text="@string/continuous_signed"
+            infotext:left_text_size="6sp"
+            infotext:right_text="天"
+            infotext:right_text_size="6sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip"
+            android:layout_marginTop="15dip"
+            android:background="#20ffffff" />
+
+        <!-- 签到积分 -->
+
+        <com.chzh.fitter.view.InfoTextView
+            android:id="@+id/curent_socre"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="8dip"
+            android:paddingRight="8dip"
+            infotext:left_text="@string/current_sign_score"
+            infotext:left_text_size="6sp"
+            infotext:right_text="分"
+            infotext:right_text_size="6sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1dip"
+            android:layout_marginBottom="15dip"
+            android:layout_marginLeft="7dip"
+            android:layout_marginRight="7dip"
+            android:layout_marginTop="15dip"
+            android:background="#20ffffff" />
+    </LinearLayout>
+
+</LinearLayout>

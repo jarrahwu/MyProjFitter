@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_course_play"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:drawableLeft="@drawable/ic_blue_right_angle"
+    android:drawablePadding="10dip"
+    android:gravity="center_vertical"
+    android:paddingBottom="10dip"
+    android:paddingTop="10dip"
+    android:text="点此播放全部课程"
+    android:textColor="#49b7dc"
+    android:textSize="20sp" >
+</TextView>

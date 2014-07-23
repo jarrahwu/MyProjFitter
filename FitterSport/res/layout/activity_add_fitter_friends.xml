@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20ffffff"
+    android:orientation="vertical"
+    android:paddingTop="7dip" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="60dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="10dip"
+        android:background="@drawable/corner_white20trans"
+        android:paddingBottom="12dip"
+        android:paddingTop="12dip" >
+
+        <EditText
+            android:paddingLeft="5dip"
+            android:textCursorDrawable="@color/WHITE"
+            android:background="@null"
+            android:id="@+id/et_search"
+            style="@style/white_text_style"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="5dip"
+            android:layout_toLeftOf="@+id/btn_search"
+            android:hint="输入电话号码:" />
+
+        <Button
+            android:id="@+id/btn_search"
+            style="@style/search_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignBottom="@+id/et_search"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="搜索" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/list_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        layout="@layout/activity_invite" />
+
+</LinearLayout>

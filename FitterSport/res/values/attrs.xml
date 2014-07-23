@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- InfoTextView 的自定义属性 -->
+    <declare-styleable name="infoText">
+        <attr name="left_text" format="reference|string" />
+        <attr name="left_text_size" format="dimension" />
+        <attr name="left_text_color" format="color" />
+        <attr name="right_text" format="reference|string" />
+        <attr name="right_text_size" format="dimension" />
+        <attr name="right_text_color" format="color" />
+        <attr name="drawable_right" format="reference" />
+        <attr name="drawable_left" format="reference" />
+        <attr name="drawble_padding" format="dimension" />
+    </declare-styleable>
+
+    <!-- 圆角图片 -->
+    <declare-styleable name="ConnerImage">
+        <attr name="radius" format="float" />
+    </declare-styleable>
+
+</resources>

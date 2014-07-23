@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/invite_parent"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ListView
+        android:id="@+id/invite_list"
+        android:layout_width="fill_parent"
+        android:divider="@drawable/line_white_10trans"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/btns" />
+
+    <RelativeLayout
+        android:id="@+id/btns"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:paddingBottom="10dip"
+        android:paddingTop="10dip" >
+
+        <Button
+            android:id="@+id/send_invite"
+            style="@style/normal_grey_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dip"
+            android:layout_toLeftOf="@+id/check_all"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="发送邀请" />
+
+        <Button
+            android:id="@+id/check_all"
+            style="@style/normal_grey_btn_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:paddingLeft="15dip"
+            android:paddingRight="15dip"
+            android:text="全选" />
+    </RelativeLayout>
+
+</RelativeLayout>

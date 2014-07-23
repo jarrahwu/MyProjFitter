@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/padding17"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- version -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <TextView
+            style="@style/WhiteTextView"
+            android:text="版本" />
+
+        <TextView
+            style="@style/WhiteTextView"
+            android:layout_alignParentRight="true"
+            android:text="V.1.0" />
+    </RelativeLayout>
+
+    <View style="@style/LINE.White.Padding" />
+
+    <!-- 画质 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <TextView
+            style="@style/WhiteTextView"
+            android:text="画质" />
+
+        <Switch
+            style="@style/FSwitch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:checked="true"
+            android:switchTextAppearance="@style/black_text_style"
+            android:textOff="普清"
+            android:textOn="高清" />
+    </RelativeLayout>
+
+    <View style="@style/LINE.White.Padding" />
+
+    <!-- secret -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <TextView
+            android:id="@+id/secret_title"
+            style="@style/WhiteTextView"
+            android:text="私隐设置:" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/secret_title"
+            android:layout_marginTop="7dip"
+            android:layout_toRightOf="@+id/secret_title"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/friend_only"
+                style="@style/FCheckBox.WhiteText"
+                android:checked="true"
+                android:paddingTop="2dip"
+                android:text="仅好友查看 " />
+
+            <RadioButton
+                android:id="@+id/all"
+                style="@style/FCheckBox.WhiteText"
+                android:layout_marginLeft="5dip"
+                android:paddingTop="2dip"
+                android:text="公开" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <View style="@style/LINE.White.Padding" />
+
+    <!-- 提醒设置 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <TextView
+            android:id="@+id/notice_title"
+            style="@style/WhiteTextView"
+            android:text="提醒设置:" />
+
+        <CheckBox
+            android:id="@+id/friend_only"
+            style="@style/FCheckBox.WhiteText"
+            android:layout_below="@+id/notice_title"
+            android:layout_marginTop="7dip"
+            android:layout_toRightOf="@+id/notice_title"
+            android:checked="true"
+            android:paddingTop="2dip"
+            android:text="按计划表提醒 " />
+    </RelativeLayout>
+
+    <View style="@style/LINE.White.Padding" />
+
+    <!-- 提醒方式 -->
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <TextView
+            android:id="@+id/notice_method_title"
+            style="@style/WhiteTextView"
+            android:text="私隐设置:" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notice_method_title"
+            android:layout_marginTop="7dip"
+            android:layout_toRightOf="@+id/notice_method_title"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/sys"
+                style="@style/FCheckBox.WhiteText"
+                android:checked="true"
+                android:paddingTop="2dip"
+                android:text="系统通知" />
+
+            <RadioButton
+                android:id="@+id/email"
+                style="@style/FCheckBox.WhiteText"
+                android:layout_marginLeft="5dip"
+                android:paddingTop="2dip"
+                android:text="邮件" />
+
+            <RadioButton
+                android:id="@+id/sms"
+                style="@style/FCheckBox.WhiteText"
+                android:layout_marginLeft="5dip"
+                android:paddingTop="2dip"
+                android:text="短信" />
+        </RadioGroup>
+    </RelativeLayout>
+
+    <View style="@style/LINE.White.Padding" />
+
+    <Button
+        android:id="@+id/logout"
+        style="@style/normal_black_btn_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dip"
+        android:text="注销当前账号" />
+
+</LinearLayout>

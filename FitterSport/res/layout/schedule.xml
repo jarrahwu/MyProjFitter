@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#20FFFFFF"
+        android:orientation="vertical"
+        android:paddingBottom="5dip"
+        android:paddingTop="5dip" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <!-- 头像的容器 -->
+
+            <RelativeLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="4" >
+
+                <TextView
+                    android:id="@+id/nick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:layout_below="@+id/portrait"
+                    android:layout_centerHorizontal="true"
+                    android:text="fitter"
+                    android:textColor="@color/WHITE"
+                    android:textSize="20sp" />
+
+                <com.chzh.fitter.view.RoundImageView
+                    android:id="@+id/portrait"
+                    style="@style/Portrait"
+                    android:layout_width="100dip"
+                    android:layout_height="100dip"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/h_2" />
+            </RelativeLayout>
+
+            <!-- 相关的资料 -->
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="fill_parent"
+                android:layout_weight="6"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="10dip"
+                android:paddingRight="10dip" >
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/me_uinfo_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="状态:" />
+
+                    <TextView
+                        android:id="@+id/status"
+                        style="@style/white_text_style"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dip"
+                        android:text="活跃"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <!-- 灰色线 -->
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginBottom="5dip"
+                    android:background="#61788B" />
+
+                <TextView
+                    android:id="@+id/level"
+                    style="@style/me_uinfo_text"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:drawablePadding="7dip"
+                    android:drawableRight="@drawable/act_start"
+                    android:paddingRight="130dip"
+                    android:text="等级:  " />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginBottom="5dip"
+                    android:background="#61788B" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        style="@style/me_uinfo_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="朋友:" />
+
+                    <TextView
+                        android:id="@+id/friends"
+                        style="@style/white_text_style"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="10dip"
+                        android:text="18"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dip"
+                    android:layout_marginBottom="5dip"
+                    android:background="#61788B" />
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 勋章 -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/me_uinfo_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="30dip"
+                android:text="勋章: " />
+            <!-- 勋章容器 -->
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/medal" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dip"
+        android:background="#50999999" />
+
+    <include layout="@layout/view_schedule_detail" />
+
+</LinearLayout>

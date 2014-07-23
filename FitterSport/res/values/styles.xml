@@ -1,0 +1,351 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="XDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/DialogAnimation</item>
+        <item name="android:background">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+
+    <style name="DialogAnimation" parent="@android:style/Animation.Dialog">
+        <item name="android:windowEnterAnimation">@anim/push_up_in</item>
+        <item name="android:windowExitAnimation">@anim/push_down_out</item>
+    </style>
+
+    <!-- ME的个人资料textView 的style -->
+
+    <style name="me_uinfo_text">
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingBottom">13dip</item>
+        <item name="android:textColor">#0D2833</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- 主界面设置的view 的 每个item的样式 -->
+    <style name="home_setting_tv">
+        <item name="android:paddingTop">20dip</item>
+        <item name="android:paddingBottom">20dip</item>
+    </style>
+
+    <!-- 身份选择Button的样式 -->
+    <style name="id_choice_button">
+        <item name="android:textColor">@color/WHITE</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <!-- Activity 样式 -->
+    <style name="padding7">
+        <item name="android:paddingLeft">7dip</item>
+        <item name="android:paddingRight">7dip</item>
+    </style>
+
+    <!-- Activity 样式 -->
+    <style name="padding17">
+        <item name="android:paddingTop">10dip</item>
+        <item name="android:paddingLeft">17dip</item>
+        <item name="android:paddingRight">17dip</item>
+        <item name="android:background">#20FFFFFF</item>
+    </style>
+
+    <!-- 蓝色普通按钮样式 -->
+    <style name="normal_blue_btn_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/corner_btn_normal</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    
+    <!-- 搜索按钮样式 -->
+    <style name="search_btn_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/corner_search_btn</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    
+    <style name="friends_btn_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/corner_friends_btn_bg</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="normal_blue_authcode_btn_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/corner_authcode_btn_normal</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- 蓝色不可用按钮样式 -->
+    <style name="disable_blue_btn_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/corner_btn_normal</item>
+        <item name="android:textColor">#d9dee7</item>
+    </style>
+
+    <!-- 灰色普通按钮样式 -->
+    <style name="normal_grey_btn_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/corner_grey_btn_normal</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- 灰色不可用按钮样式 -->
+    <style name="disable_grey_btn_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/corner_grey_btn_disable</item>
+        <item name="android:textColor">#adadad</item>
+    </style>
+
+    <!-- 黑色普通按钮样式 -->
+    <style name="normal_black_btn_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/corner_black_btn_normal</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- 黑色不可用按钮样式 -->
+    <style name="disable_black_btn_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/corner_black_btn_disable</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- 输入框样式 -->
+    <style name="normal_edit_style">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textCursorDrawable">@color/WHITE</item>
+    </style>
+
+    <!-- 白色文字样式 -->
+    <style name="white_text_style">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="blue_text_style">
+        <item name="android:textColor">#49b7dc</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="orange_text_style">
+        <item name="android:textColor">#FF7D2E</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="grey_text_style">
+        <item name="android:textColor">#A5A5A5</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 蓝色文字样式 -->
+    <style name="dark_blue_text_style">
+        <item name="android:textColor">#1c2946</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+    
+    <!-- 黑色文字样式 -->
+    <style name="black_text_style">
+        <item name="android:textColor">#182140</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <!-- 黄色文字样式 -->
+    <style name="yello_text_style">
+        <item name="android:textColor">#FEF052</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="VideoMediaButton">
+        <item name="android:background">@null</item>
+        <item name="android:layout_width">71dip</item>
+        <item name="android:layout_height">52dip</item>
+    </style>
+
+    <style name="VideoMediaButton.Previous">
+        <item name="android:src">@drawable/ic_pre</item>
+    </style>
+
+    <style name="VideoMediaButton.Next">
+        <item name="android:src">@drawable/ic_next</item>
+    </style>
+
+    <style name="VideoMediaButton.Play">
+        <item name="android:src">@drawable/sel_video_play_btn</item>
+    </style>
+
+    <style name="VideoMediaButton.Pause">
+        <item name="android:src">@android:drawable/ic_media_pause</item>
+    </style>
+
+    <style name="VideoMediaButton.Audio">
+        <item name="android:src">@drawable/sel_video_audio_btn</item>
+    </style>
+
+    <style name="FCheckBox" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/sel_check_box</item>
+    </style>
+
+    <style name="FCheckBox.WhiteText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- 课程结果 -->
+    <style name="CourseResultText">
+        <item name="android:textSize">16sp</item>
+        <item name="android:paddingLeft">35dip</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="CourseResultText.Grey">
+        <item name="android:textColor">#4E5051</item>
+    </style>
+
+    <style name="CourseResultText.WHITE">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+
+    <!-- 蓝色圆角按钮 -->
+    <style name="BlueConnerButton">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/corner_btn_normal</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">20dip</item>
+        <item name="android:paddingRight">20dip</item>
+        <item name="android:paddingTop">3dip</item>
+        <item name="android:paddingBottom">3dip</item>
+    </style>
+
+    <style name="BlueConnerButton.Add">
+        <item name="android:drawableLeft">@drawable/icon_invite</item>
+        <item name="android:drawablePadding">10dip</item>
+    </style>
+
+    <style name="WhiteTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="FTextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="FTextView.BlackTtilePre">
+        <item name="android:textColor">#0D2833</item>
+    </style>
+
+    <style name="FTextView.CommentDesc">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">0dip</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#BFC1C3</item>
+    </style>
+
+    <!-- 蓝色普通按钮样式 -->
+    <style name="login_blue_btn_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/corner_darkblue_btn_normal</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <!-- 蓝色普通按钮样式 -->
+    <style name="login_darkwhite_btn_style">
+        <item name="android:textSize">18sp</item>
+        <item name="android:background">@drawable/corner_darkwhite_btn_normal</item>
+        <item name="android:textColor">#80000000</item>
+    </style>
+
+    <style name="LINE">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">2dip</item>
+    </style>
+
+    <style name="LINE.Grey">
+        <item name="android:background">@drawable/line_grey</item>
+    </style>
+
+    <style name="LINE.White">
+        <item name="android:background">@drawable/line_white_10trans</item>
+    </style>
+
+    <style name="LINE.White.Padding">
+        <item name="android:layout_marginTop">12dip</item>
+        <item name="android:layout_marginBottom">12dip</item>
+    </style>
+
+    <style name="LINE.White20Trans">
+        <item name="android:background">@drawable/line_white_20trans</item>
+    </style>
+
+    <style name="LINE.Black">
+        <item name="android:background">@drawable/line_black</item>
+    </style>
+
+    <style name="FList">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:footerDividersEnabled">false</item>
+    </style>
+
+    <style name="FList.GreyDivider">
+        <item name="android:divider">@drawable/line_grey</item>
+    </style>
+
+    <style name="UserInfoDivider">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:layout_marginBottom">10dip</item>
+        <item name="android:layout_marginTop">10dip</item>
+        <item name="android:background">#F0F0F1</item>
+    </style>
+
+    <style name="UserInfoDividerEdge">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:background">#C9C9CB</item>
+    </style>
+
+    <style name="Portrait">
+        <item name="android:padding">2dip</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_width">75dip</item>
+        <item name="android:layout_height">75dip</item>
+        <item name="android:background">@drawable/corner_white_portrit</item>
+    </style>
+	
+    <style name="FSwitch"  parent="@android:style/Widget.CompoundButton">
+        <item name="android:thumb">@drawable/ic_switch_thumb</item>
+        <item name="android:track">@drawable/bg_switch</item>
+    </style>
+</resources>

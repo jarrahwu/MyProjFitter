@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_menu_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="8dip"
+        android:text="title" />
+
+    <LinearLayout
+        android:id="@+id/popup_menu_container"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="4dip"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+    <!--
+          <Button
+            android:id="@+id/authenticate_popup_menu_tobe"
+            android:layout_width="fill_parent"
+            android:layout_height="49dip"
+            android:background="@drawable/popup_menu_btn_selector"
+            android:text="bb" />
+    -->
+
+</LinearLayout>

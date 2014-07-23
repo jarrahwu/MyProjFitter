@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <FrameLayout
+        android:id="@+id/vol_parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/controlls"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="10dip"
+        android:layout_marginRight="15dip"
+        android:background="#CC000000"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:visibility="gone" >
+
+        <com.chzh.fitter.view.VerticalSeekBar
+            android:id="@+id/audio_seek"
+            android:layout_width="wrap_content"
+            android:layout_height="100dip" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/controlls"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#CC000000"
+        android:paddingTop="4dip" >
+
+        <ImageButton
+            android:id="@+id/pause"
+            style="@style/VideoMediaButton.Play"
+            android:contentDescription="@string/description" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:orientation="horizontal" >
+
+            <ImageButton
+                android:id="@+id/prev"
+                style="@style/VideoMediaButton.Previous"
+                android:contentDescription="@string/description" />
+
+            <ImageButton
+                android:id="@+id/next"
+                style="@style/VideoMediaButton.Next"
+                android:contentDescription="@string/description" />
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/audio"
+            style="@style/VideoMediaButton.Audio"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:contentDescription="@string/description" />
+    </RelativeLayout>
+
+</RelativeLayout>

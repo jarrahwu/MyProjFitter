@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingTop="15dip" >
+
+        <TextView
+            style="@style/blue_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您的身体状态"
+            android:textSize="25sp" />
+
+        <TextView
+            style="@style/orange_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:text="结论 :"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/grey_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:text="您近期易感疲惫, 肌肉功能下降, 脂肪代谢减慢." />
+
+        <TextView
+            style="@style/orange_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:text="建议 :"
+            android:textSize="16sp" />
+
+        <TextView
+            style="@style/grey_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginTop="10dip"
+            android:paddingLeft="20dip"
+            android:paddingRight="20dip"
+            android:text="饮食规律, 三餐按时, 保持良好情绪." />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="20dip"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                style="@style/orange_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推荐运动 :"
+                android:textSize="16sp" />
+
+            <TextView
+                style="@style/blue_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="  基础课程  "
+                android:textSize="25sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="10dip"
+            android:src="@drawable/fa_01" />
+
+        <TextView
+            android:id="@+id/goto_main"
+            style="@style/blue_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:paddingBottom="10dip"
+            android:text="进入主页 >"
+            android:textSize="25sp" >
+        </TextView>
+    </LinearLayout>
+
+</ScrollView>

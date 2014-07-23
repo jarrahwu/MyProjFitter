@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:infotext="http://schemas.android.com/apk/res/com.chzh.fitter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1a2645"
+    android:orientation="vertical"
+    android:paddingLeft="7dip" >
+
+    <com.chzh.fitter.view.InfoTextView
+        android:id="@+id/user_info"
+        style="@style/home_setting_tv"
+        android:layout_width="@dimen/setting_width"
+        android:layout_height="wrap_content"
+        infotext:drawable_left="@drawable/ic_user"
+        infotext:left_text="个人资料" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/line_black" />
+
+    <com.chzh.fitter.view.InfoTextView
+        android:id="@+id/sign"
+        style="@style/home_setting_tv"
+        android:layout_width="@dimen/setting_width"
+        android:layout_height="wrap_content"
+        infotext:drawable_left="@drawable/sign"
+        infotext:left_text="签到" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/line_black" />
+
+    <com.chzh.fitter.view.InfoTextView
+        android:id="@+id/scores"
+        style="@style/home_setting_tv"
+        android:layout_width="@dimen/setting_width"
+        android:layout_height="wrap_content"
+        infotext:drawable_left="@drawable/scores"
+        infotext:left_text="积分查询" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/line_black" />
+
+    <com.chzh.fitter.view.InfoTextView
+        android:id="@+id/password"
+        style="@style/home_setting_tv"
+        android:layout_width="@dimen/setting_width"
+        android:layout_height="wrap_content"
+        infotext:drawable_left="@drawable/secure"
+        infotext:left_text="密码安全" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dip"
+        android:background="@drawable/line_black" />
+
+    <com.chzh.fitter.view.InfoTextView
+        android:id="@+id/setting"
+        style="@style/home_setting_tv"
+        android:layout_width="@dimen/setting_width"
+        android:layout_height="wrap_content"
+        infotext:drawable_left="@drawable/setting"
+        infotext:left_text="设置" />
+
+</LinearLayout>

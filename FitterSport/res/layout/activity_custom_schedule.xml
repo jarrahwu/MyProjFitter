@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dip"
+    android:orientation="vertical" >
+
+    <com.chzh.fitter.view.BounceListView
+        android:layout_above="@+id/ok"
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <Button
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/ok"
+        android:layout_marginTop="5dip"
+        style="@style/normal_blue_btn_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingLeft="50dip"
+        android:paddingRight="50dip"
+        android:text="完成" />
+
+</RelativeLayout>

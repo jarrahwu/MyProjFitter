@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chzh.fitter"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 读取联系人权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!--  -->
+    <!-- 必须申明的权限 -->
+    <uses-permission android:name="android.permission.INTERNET" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.chzh.fitter.framework.FitterApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/app_icon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.chzh.fitter.UserIdActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.LoginActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.SignActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.RegisterActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.EditActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/SampleTheme" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.video.VideoPlayerActivity"
+            android:screenOrientation="landscape" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.UserActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.InviteActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.GymPlansActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.CourseSummaryActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.CourseCommentActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.video.ActionPreviewActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.CourseScheduleActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.FriendDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.CourseRecommendActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.QuestionActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.CourseResultActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.InfoDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.FitterFriendsActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.AddFitterFriendActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.AppSettingActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.PasswordActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.DownloadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.chzh.fitter.ActionDownloadActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.chzh.fitter.WXEntryActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" >
+        </activity>
+        <!-- 百度统计相关 -->
+        <!-- 您从百度网站获取的APP KEY -->
+        <meta-data
+            android:name="BaiduMobAd_STAT_ID"
+            android:value="251097dfa1" />
+        <!-- 渠道商编号 -->
+        <meta-data
+            android:name="BaiduMobAd_CHANNEL"
+            android:value="test" />
+    </application>
+
+</manifest>

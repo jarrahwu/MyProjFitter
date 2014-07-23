@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#20FFFFFF"
+        android:orientation="vertical"
+        android:paddingBottom="12dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="12dip" >
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/white_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="基础课程"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/effect"
+            style="@style/white_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="10分钟, 120卡路里" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/doAgain"
+                style="@style/white_text_style"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_blue_right_angle"
+                android:gravity="center_vertical"
+                android:text="再来一次" />
+
+            <TextView
+                android:id="@+id/share"
+                style="@style/white_text_style"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/ic_white_share"
+                android:gravity="center_vertical"
+                android:text="分享" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/invite"
+            style="@style/white_text_style"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:drawableLeft="@drawable/ic_white_msg"
+            android:gravity="center_vertical"
+            android:text="邀请好友" />
+    </LinearLayout>
+
+    <!-- 选项说明 -->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dip"
+        android:layout_marginTop="10dip"
+        android:orientation="horizontal"
+        android:paddingLeft="20dip"
+        android:paddingRight="20dip" >
+
+        <TextView
+            style="@style/FTextView.CommentDesc"
+            android:drawableLeft="@drawable/ic_feel_normal"
+            android:text="很一般!" />
+
+        <TextView
+            style="@style/FTextView.CommentDesc"
+            android:drawableLeft="@drawable/ic_feel_good"
+            android:text="太容易!" />
+
+        <TextView
+            style="@style/FTextView.CommentDesc"
+            android:drawableLeft="@drawable/ic_feel_bad"
+            android:text="太难了!" />
+    </LinearLayout>
+
+    <com.chzh.fitter.view.BounceListView
+        android:id="@+id/action_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="10dip"
+        android:layout_marginTop="10dip" />
+
+</LinearLayout>

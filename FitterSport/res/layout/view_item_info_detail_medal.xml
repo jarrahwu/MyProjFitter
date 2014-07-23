@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="20dip"
+    android:paddingTop="20dip" >
+
+    <ImageView
+        android:id="@+id/medal_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/medal" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dip"
+        android:layout_toRightOf="@+id/medal_icon"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/medal_name"
+            style="@style/WhiteTextView"
+            android:text="fitter"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/medal_description"
+            style="@style/WhiteTextView"
+            android:text="fitter" />
+    </LinearLayout>
+
+</RelativeLayout>

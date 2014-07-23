@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="#000000" >
+
+    <VideoView
+        android:id="@+id/bg_video"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/member_group"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380dip"
+        android:orientation="vertical"
+        android:paddingLeft="30dip"
+        android:paddingRight="30dip" >
+
+        <Button
+            android:id="@+id/id_fitter"
+            style="@style/login_blue_btn_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dip"
+            android:drawableLeft="@drawable/ic_user"
+            android:paddingLeft="60dip"
+            android:paddingRight="60dip"
+            android:text="Fitter账号" />
+
+        <Button
+            android:id="@+id/register"
+            style="@style/login_darkwhite_btn_style"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dip"
+            android:drawableLeft="@drawable/ic_pen"
+            android:paddingLeft="60dip"
+            android:paddingRight="60dip"
+            android:text="用户注册" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/id_visitor"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/member_group"
+        android:layout_centerHorizontal="true"
+        android:background="@null"
+        android:text="游客登录 ＞" />
+
+    <TextView
+        style="@style/WhiteTextView"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dip"
+        android:gravity="left"
+        android:paddingRight="20dip"
+        android:text="@string/welcome"
+        android:textSize="22sp" />
+
+</RelativeLayout>

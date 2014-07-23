@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/padding17"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#20FFFFFF"
+    android:orientation="vertical" >
+
+    <EditText
+        android:id="@+id/account"
+        style="@style/normal_edit_style"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="20dip"
+        android:hint="@string/tips_account"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/password"
+        style="@style/normal_edit_style"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="7dip"
+        android:hint="@string/tips_input_pwd"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/normal_black_btn_style"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="17dip"
+        android:text="@string/login" />
+
+    <Button
+        android:id="@+id/btn_register"
+        style="@style/normal_blue_btn_style"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="17dip"
+        android:text="@string/register_new_account" />
+
+    <TextView
+        android:id="@+id/help"
+        style="@style/white_text_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="@string/login_help"
+        android:visibility="gone" />
+
+</LinearLayout>

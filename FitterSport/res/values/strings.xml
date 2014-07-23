@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Fitter健身</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="Auth_fail">没有权限,验证失败</string>
+    <string name="connect_fail">网络不给力.</string>
+    <string name="exception_try">服务器异常</string>
+    <string name="fail">失败</string>
+    <string name="send_auth">发送验证码</string>
+    <string name="back">返回</string>
+    <string name="agree_tips">已阅读,并同意用户使用协议</string>
+    <string name="complete">完成</string>
+
+    <!-- 注册tips -->
+    <string name="tips_agree_app_info_error">请勾选用户协议</string>
+    <string name="password_not_equals">两次输入的密码不相同</string>
+    <string name="tips_password_repeat_length_error">重复输入的密码长度不符合要求(6 到 20)位</string>
+    <string name="tips_password_length_error">密码长度不符合要求(6 到 20)位</string>
+    <string name="register">注册新账号</string>
+    <string name="tips_phone">请输入您的电话号码</string>
+    <string name="tips_password">请输入密码(最少6位)</string>
+    <string name="tips_password_repeat">请再次输入密码</string>
+    <string name="tips_msg_auth_code">请输入验证码</string>
+    <string name="tips_phone_format_error">手机号码格式不对.</string>
+
+    <!-- 登陆界面 -->
+    <string name="register_new_account">注册新账号</string>
+    <string name="login">登陆</string>
+    <string name="tips_account">请输入您的fitter账号</string>
+    <string name="tips_input_pwd">请输入密码</string>
+    <string name="login_help">登陆遇到问题?</string>
+
+    <!-- 个人资料 -->
+    <string name="personalData">个人资料</string>
+    <string name="personalIcon">个人头像</string>
+    <string name="nickname">昵称</string>
+    <string name="account">账号</string>
+    <string name="sex">性别</string>
+    <string name="height">身高(cm)</string>
+    <string name="weight">体重(kg)</string>
+    <string name="age">年龄</string>
+    <string name="index">BIM指数</string>
+    <string name="finish">完成</string>
+    <string name="set_network">网络连接不可用，请检查网络设置</string>
+    <string name="check_network">立即检查</string>
+
+    <!-- 签到 -->
+    <string name="signed">已签到</string>
+    <string name="continuous_signed">连续签到</string>
+    <string name="current_sign_score">今日签到积分</string>
+
+    <!-- 主页 -->
+    <string name="home">首页</string>
+    <string name="schedule">计划表</string>
+    <string name="friends">朋友们</string>
+    <string name="me">我的Fitter</string>
+    <string name="app_intro">Fitter介绍:\nFitter健身是一款基于视频教学的家庭健身APP, 在Fitter, 你可以:减肥、塑形、提升体质, 增强心肺功能......</string>
+    <string name="description">Media Controls</string>
+
+    <!-- 测试用的数据 -->
+    <string name="AirJumpRope">双脚同时跳起、落下，配合两臂空手摇动。不使用跳绳，但保持跳绳动作</string>
+    <string name="JumpingJacks">双脚并拢手臂自然下垂，跳起打开，与肩同宽，同时，手臂从体侧举起，在头顶拍掌，回到起始动作</string>
+    <string name="ButtKicks">原地跑步，跑步同时，尽量将脚后跟踢到臀部</string>
+    <string name="BodyweightSquats">双脚与肩同宽，双手伸直，尽量下蹲至大腿面平行于地面</string>
+    <string name="ElbowPlank">俯卧，双肘弯曲支撑在地面上，肩膀和肘关节垂直于地面，双脚踩地，身体离开地面，躯干伸直，头部、肩部、胯部和踝部保持在同一平面，腹肌收紧，盆底肌收紧，脊椎延长，眼睛看向地面，保持均匀呼吸</string>
+    <string name="PlankTwists">俯地，单手支撑整个身体往一侧转动抬高另一只手</string>
+    <string name="HalfPushups">保持上半身完全笔直，双脚微微张开，双手放在与肩膀同一条直线上，手臂半弯，然后伏低身体直到胸部几乎能贴到地面，最后回到初始状态。</string>
+    <string name="MountainClimbers">俯卧撑准备动作，保持手臂支撑，左右脚做轮替高抬腿</string>
+    <string name="SideLunges">左右腿轮替，左右侧压腿</string>
+    <string name="SlalomJumps">双脚与肩同宽，双手伸直，尽量下蹲至大腿面平行于地面，然后跳起。</string>
+    <string name="HighKnees">原地高抬腿跑步，膝盖提高至大腿面平行于地面</string>
+    <string name="WallSquatHold">背部完全靠在墙面上，双脚与肩同宽，双手伸直，尽量下蹲至大腿面平行于地面</string>
+    <string name="Lunges">弓步压腿，前肢触地，左右脚轮换</string>
+    <string name="KneelingPushups">保持上半身完全笔直，膝盖着地，双脚抬起，双手放在与肩膀同一条直线上，手臂半弯，然后伏低身体直到胸部几乎能贴到地面，最后回到初始状态。</string>
+    <string name="MuayThaiKicks">拳击准备动作，双手收起，击出左拳同时抬起右膝，膝盖尽量靠近肘部</string>
+    <string name="FastFeetInSquat">双脚与肩同宽，双手伸直，快速原地小跑</string>
+    <string name="SidePlanksLeft">单侧肘部平板支撑，保持平板支撑动作，侧身，保持静止</string>
+    <string name="SidePlanksRight">单侧肘部平板支撑，保持平板支撑动作，侧身，保持静止</string>
+    <string name="WarriorKickout">双手平行向前伸展，左右腿轮流往后抬高</string>
+    <string name="SpidermanPushups">俯地，压低身体，左右脚轮流弯曲，膝盖尽量接触到手肘</string>
+    <string name="PikePress">俯地抬高臂部，头部向下压缩身体</string>
+    <string name="Crunches">仰卧，两腿并拢，两手上举，利用腹肌收缩，两臂向前摆动，迅速成坐姿，上体继续前屈，两手触脚面，低头；然后还原成坐姿。</string>
+	<string name="Burpees">向下蹲，双手向前按地。双脚向后踢并伸直，姿势像掌上压一样。双脚屈膝向前踢，返回原来向下蹲的姿势。双手伸直向上跳，尽量跳高。</string>
+    <string name="TuckJump">高强度跳跃平行至膝盖</string>
+    <string name="HeismanLungesLeft">单脚站立，手臂自然摆动，左脚悬空高抬腿</string>
+    <string name="welcome">欢迎来到飞豆 \nWelcome to Fitter\t</string>
+</resources>

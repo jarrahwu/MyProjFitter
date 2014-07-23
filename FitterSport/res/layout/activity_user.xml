@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:infotext="http://schemas.android.com/apk/res/com.chzh.fitter"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF4"
+    android:orientation="vertical"
+    android:paddingTop="5dip" >
+
+    <!-- 个人头像 -->
+
+    <View style="@style/UserInfoDividerEdge" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="22dip"
+        android:paddingRight="22dip" >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dip" >
+
+            <TextView
+                style="@style/white_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="个人头像"
+                android:textColor="@color/light_pink" />
+
+            <com.chzh.fitter.view.RoundImageView
+                android:id="@+id/portrait"
+                style="@style/Portrait"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/h_2" />
+        </RelativeLayout>
+
+        <View style="@style/UserInfoDivider" />
+
+        <!-- 昵称 -->
+
+        <com.chzh.fitter.view.InfoTextView
+            android:id="@+id/nick"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            infotext:drawable_right="@drawable/arrow_grey"
+            infotext:left_text="昵称"
+            infotext:left_text_color="@color/light_pink"
+            infotext:left_text_size="6sp"
+            infotext:right_text="fitter"
+            infotext:right_text_color="@color/light_pink"
+            infotext:right_text_size="6sp" />
+
+        <View style="@style/UserInfoDivider" />
+
+        <!-- fitter 账号 -->
+
+        <com.chzh.fitter.view.InfoTextView
+            android:id="@+id/fitter_account"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            infotext:left_text="fitter账号"
+            infotext:left_text_color="@color/light_pink"
+            infotext:left_text_size="6sp"
+            infotext:right_text="18682282284"
+            infotext:right_text_color="@color/light_pink"
+            infotext:right_text_size="6sp" />
+    </LinearLayout>
+
+    <View style="@style/UserInfoDividerEdge" />
+
+    <View
+        style="@style/UserInfoDividerEdge"
+        android:layout_marginTop="10dip" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:paddingLeft="22dip"
+        android:paddingRight="22dip" >
+
+        <!-- 性别 -->
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="10dip" >
+
+            <TextView
+                style="@style/white_text_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="性别"
+                android:textColor="@color/light_pink" />
+
+            <Switch
+                android:id="@+id/gender"
+                style="@style/FSwitch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:switchTextAppearance="@style/black_text_style"
+                android:textOff="男"
+                android:textOn="女" />
+        </RelativeLayout>
+
+        <View style="@style/UserInfoDivider" />
+
+        <!-- 身高 -->
+
+        <com.chzh.fitter.view.InfoTextView
+            android:id="@+id/height"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            infotext:drawable_right="@drawable/arrow_grey"
+            infotext:left_text="身高(cm)"
+            infotext:left_text_color="@color/light_pink"
+            infotext:left_text_size="6sp"
+            infotext:right_text="158"
+            infotext:right_text_color="@color/light_pink"
+            infotext:right_text_size="6sp" />
+
+        <View style="@style/UserInfoDivider" />
+
+        <!-- 体重 -->
+
+        <com.chzh.fitter.view.InfoTextView
+            android:id="@+id/weight"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            infotext:drawable_right="@drawable/arrow_grey"
+            infotext:left_text="体重(kg)"
+            infotext:left_text_color="@color/light_pink"
+            infotext:left_text_size="6sp"
+            infotext:right_text="80"
+            infotext:right_text_color="@color/light_pink"
+            infotext:right_text_size="6sp" />
+
+        <View style="@style/UserInfoDivider" />
+
+        <!-- 年龄 -->
+
+        <com.chzh.fitter.view.InfoTextView
+            android:id="@+id/age"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dip"
+            android:paddingTop="5dip"
+            infotext:drawable_right="@drawable/arrow_grey"
+            infotext:left_text="年龄"
+            infotext:left_text_color="@color/light_pink"
+            infotext:left_text_size="6sp"
+            infotext:right_text="20"
+            infotext:right_text_color="@color/light_pink"
+            infotext:right_text_size="6sp" />
+
+        <View style="@style/UserInfoDivider" />
+
+        <!-- bmi指数 -->
+
+        <com.chzh.fitter.view.InfoTextView
+            android:id="@+id/bmi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dip"
+            android:paddingTop="5dip"
+            infotext:left_text="bmi指数"
+            infotext:left_text_color="@color/light_pink"
+            infotext:left_text_size="6sp"
+            infotext:right_text="19.8"
+            infotext:right_text_color="@color/light_pink"
+            infotext:right_text_size="6sp" />
+    </LinearLayout>
+
+    <View style="@style/UserInfoDividerEdge" />
+
+</LinearLayout>
